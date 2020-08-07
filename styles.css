@@ -1,0 +1,318 @@
+/* Import font (FiraGo,NotoSansGeorgian) */
+@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+@font-face {
+  font-family: "NotoSansGeorgian";
+  src: url("/fonts/NotoSansGeorgian-Medium") format("ttf"), url("/fonts/NotoSansGeorgian-Regular") format("ttf");
+}
+
+/* Asteriscs */
+* {
+  text-decoration: none !important;
+  color: #22252B;
+}
+
+/*HTML, BODY */
+html {
+  font-size: 62.5%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  font-family: FiraGO !important;
+  font-style: Bold !important;
+  font-size: 1.6rem;
+  background-color: #f1f1f1;
+}
+
+/* Paddings & Margins */
+.pl-100 {
+  padding-left: 10rem;
+}
+
+.pl-150 {
+  padding-left: 15rem;
+}
+
+.pl-10 {
+  padding-left: 1rem;
+}
+
+.pb-30 {
+  padding-bottom: 3rem;
+}
+
+.pb-60 {
+  padding-bottom: 6rem;
+}
+
+.pb-90 {
+  padding-bottom: 9rem;
+}
+
+.mb-20 {
+  margin-bottom: 2rem;
+}
+
+.mb-40 {
+  margin-bottom: 4rem;
+}
+
+.mb-70 {
+  margin-bottom: 7rem;
+}
+
+/* TEXT */
+.normal-size {
+  font-size: 1.6rem !important;
+}
+
+.medium-size {
+  font-size: 1.3rem !important;
+}
+
+.small-size {
+  font-size: 0.9rem !important;
+}
+
+.big-size {
+  font-size: 2.4rem !important;
+  font-weight: 700;
+}
+
+.big-bold {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+/*..............................*/
+/* SLiDER */
+.carousel-control-prev-icon {
+  position: absolute;
+  left: 0% !important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E") !important;
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E") !important;
+}
+
+.extra-photo {
+  position: relative;
+  color: black;
+  font-size: 2rem;
+  left: 30%;
+  top: -50px;
+  padding: 0.7rem;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+/* /SLIER */
+/* ---------------HEADER----------------------*/
+header {
+  border-bottom: 1px solid #EDF3FB;
+  height: 6.5rem;
+}
+
+header .header__text {
+  margin-left: 3rem;
+  font-size: 2rem;
+}
+
+header .header__text--1 {
+  font-family: FiraGO;
+  font-style: Book Italic;
+  font-size: 1rem;
+}
+
+header .header__text--2 {
+  font-family: FiraGO;
+  font-style: Italic;
+  font-size: 1rem;
+}
+
+header .header__text--3 {
+  font-family: NotoSansGeorgian;
+  font-weight: 600;
+  font-size: 1.2rem;
+  border: 1px solid #2B89EE;
+  border-radius: 8px;
+  color: #2B89EE;
+  margin-left: 1rem;
+  padding: 0.5rem;
+  letter-spacing: 1px;
+}
+
+header .header__icons * {
+  margin: 0.5rem;
+}
+
+/* ---------------/HEADER-----------------------*/
+/* -----------------DONE PROJECTS----------------*/
+.done-projects .done > * {
+  margin-left: 2rem;
+}
+
+/* -----------------/DONE PROJECTS----------------*/
+/* -----------------USER-INFO----------------*/
+.user-info .spec {
+  font-size: 9px;
+  font-family: NotoSansGeorgian;
+}
+
+.user-info .id {
+  background-color: #22252B;
+  border-radius: 12px;
+  color: #fff;
+  font-size: 1.3rem;
+  line-height: 1.6rem;
+  padding: 1.6rem;
+}
+
+.user-info .upload {
+  border: 1px solid #FFEDEE;
+  padding: 1.6rem;
+  border-radius: 15px;
+}
+
+.user-info .schedule-font {
+  font-size: 1.1rem;
+}
+
+.user-info .schedule-font :hover {
+  background-color: #EDF3FB;
+}
+
+.user-info .schedule-font div {
+  padding: 13px;
+  border-radius: 1.5rem;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.user-info .schedule-font > div {
+  margin-right: 1.7rem;
+}
+
+.user-info .schedule-font img {
+  padding-right: 1rem;
+}
+
+.user-info p {
+  font-family: NotoSansGeorgian;
+  font-size: 1.6rem;
+}
+
+.user-info .typeOfService span {
+  font-family: Helventica;
+  font-size: 1.6rem;
+}
+
+.user-info .typeOfService span:nth-last-child() {
+  background-color: #EDF3FB;
+}
+
+.user-info .typeOfService img {
+  padding-right: 1rem;
+}
+
+.user-info .more-service {
+  background-color: #EDF3FB;
+  border-radius: 10px;
+  padding: 1.3rem;
+}
+
+.user-info .location address {
+  font-family: NotoSansGeorgian;
+  font-size: 1.6rem;
+}
+
+/* -----------------/USER-INFO----------------*/
+.estimates__first {
+  background-color: #fff;
+  border-radius: 25px;
+  -webkit-box-shadow: 10px 7px 44px -27px rgba(0, 0, 0, 0.83);
+  box-shadow: 10px 7px 44px -27px rgba(0, 0, 0, 0.83);
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.estimates__first:hover {
+  background-color: #F8EBC2;
+}
+
+.estimates__first .estimates-icons-shape {
+  padding: 1.8rem 4.5rem 1.7rem 4.5rem;
+}
+
+.estimates__first .stars {
+  font-size: 7rem;
+  border-radius: 100%;
+  background-color: #fff8f8;
+  padding: 20px;
+  color: blue;
+  --fa-primary-color: #FFDF77;
+  --fa-secondary-color: #FFEDB2;
+  --fa-secondary-opacity: 1;
+}
+
+.estimates__first .estimate-bottom {
+  padding: 1.3rem 0.9rem 1.2rem 1.7rem;
+  margin: 1.3rem 0 0.9rem 0;
+  background-color: #fff;
+  border-radius: 10px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.estimates .clock {
+  font-size: 7rem;
+  border-radius: 100%;
+  background-color: #90B4E5;
+  padding: 20px;
+  color: blue;
+  --fa-primary-color: #90B4E5;
+  --fa-secondary-color: #FFFFFF;
+  --fa-secondary-opacity: 1;
+}
+
+.shield {
+  font-size: 7rem;
+  border-radius: 100%;
+  background-color: #96DC7B;
+  padding: 20px;
+  color: blue;
+  --fa-primary-color: #96DC7B;
+  --fa-secondary-color: #FFFFFF;
+  --fa-secondary-opacity: 1;
+}
+
+.hands {
+  font-size: 2rem;
+  border-radius: 100%;
+  background-color: #FFAB61;
+  padding: 20px;
+  color: blue;
+  --fa-primary-color: #FFFFFF;
+  --fa-secondary-color: #FFEEDF;
+  --fa-secondary-opacity: .7;
+}
+
+.hands .fa-praying-hands {
+  font-size: 2.4rem;
+}
+
+.sim-categories .col-7 span {
+  border: 1px solid #BDD9FF;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 10px;
+  padding: 1.3rem 1.6rem;
+}
+
+.fixed-bottom {
+  margin-bottom: -4.5rem;
+}
+/*# sourceMappingURL=styles.css.map */
