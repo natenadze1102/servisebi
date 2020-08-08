@@ -28,7 +28,6 @@
     font-style: Bold !important;
     font-size: 1.6rem;
     background-color: #f1f1f1;
-
   }
 
   /* Paddings & Margins */
@@ -93,38 +92,18 @@
   }
 
   /*..............................*/
-/* SLiDER */
-.carousel-control-prev-icon {
-  position: absolute;
-  left:0%!important;
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")!important;
-}
 
-.carousel-control-next-icon {
-  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")!important;
-}
-
-.extra-photo {
-position: relative;
-color:black;
-font-size: 2rem;
-left:30%;
-top:-50px;
-padding: 0.7rem;
-background-color: #fff;
-border-radius: 10px;
-}
-
-/* /SLIER */
 
   /* ---------------HEADER----------------------*/
   header {
     border-bottom: 1px solid #EDF3FB;
-    height: 6.5rem;
 
+
+    .header-phone {
+        display: none;
+    }
 
     .header__text {
-      margin-left: 3rem;
       font-size: 2rem;
 
       &--1 {
@@ -133,20 +112,13 @@ border-radius: 10px;
         font-size: 1rem;
       }
 
-      &--2 {
-        font-family: FiraGO;
-        font-style: Italic;
-        font-size: 1rem;
-      }
-
       &--3 {
         font-family: NotoSansGeorgian;
-        font-weight: 600;
+        font-weight: bold;
         font-size: 1.2rem;
         border: 1px solid #2B89EE;
         border-radius: 8px;
         color: #2B89EE;
-        margin-left: 1rem;
         padding: 0.5rem;
         letter-spacing: 1px;
       }
@@ -157,21 +129,126 @@ border-radius: 10px;
         margin: 0.5rem;
       }
     }
-  }
 
-  /* ---------------/HEADER-----------------------*/
-
-  /* -----------------DONE PROJECTS----------------*/
-  .done-projects {
-    .done {
-      &>* {
-        margin-left: 2rem;
+    @media only screen and (max-width: 768px)  {
+      .container-fluid {
+          background-color: #F9F9F9;
+          box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.1);
       }
+      header {
+          font-family: NotoSansGeorgian;
+          border-bottom: none;
+      }
+  
+      .header-desc {
+          display: none!important;
+      }
+  
+      .header-phone {
+          display: flex!important;
+      }
+  
+      .container-fluid {
+          padding: 1.6rem 1.9rem 1.8rem 1.5rem!important;
+      }
+  }
+  }
+  /* ---------------/HEADER---------------*/
+
+  /* -----------------CRAFTSMAN PROJECTS----------------*/
+    .craftsman-projects {
+    @media only screen and (max-width: 768px) {
+      display: none;
     }
   }
-  /* -----------------/DONE PROJECTS----------------*/
+  /* -----------------/CRAFTSMAN PROJECTS----------------*/
   
-  
+  /* -----------------CRAFTSMAN AND HIS CLIENTS-----------------*/
+  .craftsman-clients {
+
+    display: none!important;
+
+    .container-fluid {
+      * {
+        display: flex;
+        align-items: center;
+      }
+      .row {
+        .col {
+
+          .craftsman-block {
+            position: relative;
+            margin-right: 1rem;
+            margin-left: 0.5rem;
+            background-color: #EDF3FB;
+            border-radius: 30px;
+            padding: 1rem;
+            font-family: NotoSansGeorgian;
+            
+            .cratsfman-icon-subtext {
+              position: absolute;
+              font-size: 1rem;
+              color:#7C7C7D;
+              bottom:-2rem;
+              left:0.5rem;
+            }
+
+            .craftman-icon {
+              margin-right: 0.8rem;
+            }
+            div {
+              margin-right: 0.8rem;
+
+              img {
+                margin-right: 0.5rem;
+              }
+              span:first-of-type {
+                font-size: 2rem;
+                font-weight: bolder;
+              }
+            }
+          }
+          .clients-group {
+            position: relative;
+            
+            .with-circle{
+              &:first-of-type {
+                border: 2px solid #BFDBF9;
+                border-radius: 50%;
+              }
+              position: relative;
+
+              .client-2-circle {
+                position: absolute;
+                left: -0.5rem;
+              }
+            }
+
+            .clients-group-subtext {
+              position: absolute;
+              bottom: -3.5rem;
+              left: 3.5rem;
+              span {
+                &:first-of-type{
+                  font-weight: bold;
+                  font-size: 1.1rem;
+                }
+                &:last-of-type{
+                  font-size: .9rem;
+                  font-family: NotoSansGeorgian;
+                }
+              }
+            }
+          }
+        } 
+      }
+    }
+
+    @media only screen and (max-width: 768px) {
+      display: inline!important;
+    }
+  }
+  /*-----------------/CRAFTSMAN AND HIS CLIENTS-----------------*/
 
   /* -----------------USER-INFO----------------*/
   .user-info {
@@ -257,6 +334,78 @@ border-radius: 10px;
   }
 
   /* -----------------/USER-INFO----------------*/
+
+  /*-----------------/USER-INFO----------------*/
+
+  /*-------------------SLIDER------------------*/
+ 
+  
+ 
+
+  @media only screen and (max-width:1024px) {
+    .sl-imgs-big {
+      flex-wrap: wrap;
+      justify-content: center;
+      img {
+        max-width: 18rem;
+      }
+      .sl-imgs-small {
+        flex-direction: row!important;
+        *:not(:last-child) {
+          margin-right: 1rem!important;;
+        }
+        /* display: none!important; */
+        img {
+          max-width: 7rem;
+          margin-right: 1.5rem;
+        }
+      }  
+    }
+
+    .extra-photos {
+      top:50%!important;
+      left:30%!important;
+      padding: 1%!important;
+      border-radius: 5px!important;
+    }
+  }
+  
+  @media only screen and (max-width: 768px){
+    .craftsman-portfolio {
+      display: none!important;
+    }
+    .description {
+      min-width: 25rem!important;
+    }
+  }
+
+
+.carousel-control-prev-icon {
+  position: absolute;
+  left:10%!important;
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")!important;
+ 
+}
+
+.carousel-control-next-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E")!important;
+  position: absolute;
+  right:10%!important
+}
+
+.extra-photos {
+ 
+  position: absolute;
+  color:black;
+  font-size: inherit;
+  left:40%;
+  top:60%;
+  padding: 8%;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+ /*-------------------/SLIDER------------------*/
   .estimates {
 
     &__first {
