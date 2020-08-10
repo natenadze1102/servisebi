@@ -455,12 +455,13 @@ header .header__images {
 }
 
 .user-profession .unic-id {
-  position: absolute;
-  top: 0;
+  /*  position: absolute;
+    top:0; */
   background: #22252B;
   border-radius: 12px;
-  padding: 1.6rem;
+  padding: 1.2rem;
   color: #fff;
+  font-size: 2rem;
 }
 
 /* ------------/PROFESSION-INFO --------------*/
