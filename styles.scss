@@ -100,6 +100,10 @@
     font-weight: 700;
   }
 
+  .large-size {
+    font-size: 3.2rem !important;
+  }
+  
   .big-bold {
     font-size: 3.2rem;
     font-weight: 700;
@@ -454,6 +458,8 @@
 
  /*-------------------/SLIDER------------------*/
 
+ /* ------------PROFESSION-INFO ---------------*/
+
  .user-profession {
    
   .craftsman {
@@ -461,15 +467,32 @@
     gap: 0.9rem;
 
     .star-4 {
-      font-size: 1.7rem;
+      font-size: 1.2rem;
       background-color: #F2F2F2;
       border-radius: 8px;
       padding: 0.4rem 0.8rem;
     }
+
+    .craftsman-info {
+     
+    }
   }
 
+  .unic-id {
+    position: absolute;
+    top:0;
+    background: #22252B;
+    border-radius: 12px;
+    padding: 1.6rem;
+    color:#fff;
  }
 
+ .share-btn {
+
+ }
+}
+
+ /* ------------/PROFESSION-INFO --------------*/
   .estimates {
 
     &__first {

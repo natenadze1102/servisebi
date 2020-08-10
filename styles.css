@@ -93,6 +93,10 @@ body {
   font-weight: 700;
 }
 
+.large-size {
+  font-size: 3.2rem !important;
+}
+
 .big-bold {
   font-size: 3.2rem;
   font-weight: 700;
@@ -435,6 +439,7 @@ header .header__images {
 }
 
 /*-------------------/SLIDER------------------*/
+/* ------------PROFESSION-INFO ---------------*/
 .user-profession .craftsman {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -443,12 +448,22 @@ header .header__images {
 }
 
 .user-profession .craftsman .star-4 {
-  font-size: 1.7rem;
+  font-size: 1.2rem;
   background-color: #F2F2F2;
   border-radius: 8px;
   padding: 0.4rem 0.8rem;
 }
 
+.user-profession .unic-id {
+  position: absolute;
+  top: 0;
+  background: #22252B;
+  border-radius: 12px;
+  padding: 1.6rem;
+  color: #fff;
+}
+
+/* ------------/PROFESSION-INFO --------------*/
 .estimates__first {
   background-color: #fff;
   border-radius: 25px;
