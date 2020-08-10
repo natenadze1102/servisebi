@@ -435,6 +435,20 @@ header .header__images {
 }
 
 /*-------------------/SLIDER------------------*/
+.user-profession .craftsman {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 0.9rem;
+}
+
+.user-profession .craftsman .star-4 {
+  font-size: 1.7rem;
+  background-color: #F2F2F2;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+}
+
 .estimates__first {
   background-color: #fff;
   border-radius: 25px;

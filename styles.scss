@@ -453,6 +453,23 @@
   }
 
  /*-------------------/SLIDER------------------*/
+
+ .user-profession {
+   
+  .craftsman {
+    display: flex;
+    gap: 0.9rem;
+
+    .star-4 {
+      font-size: 1.7rem;
+      background-color: #F2F2F2;
+      border-radius: 8px;
+      padding: 0.4rem 0.8rem;
+    }
+  }
+
+ }
+
   .estimates {
 
     &__first {
