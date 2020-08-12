@@ -445,6 +445,7 @@ header .header__images {
   display: -ms-flexbox;
   display: flex;
   gap: 0.9rem;
+  margin-right: 8.6rem;
 }
 
 .user-profession .craftsman .star-4 {
@@ -454,14 +455,57 @@ header .header__images {
   padding: 0.4rem 0.8rem;
 }
 
+@media only screen and (max-width: 1024px) {
+  .user-profession .craftsman {
+    display: none !important;
+  }
+}
+
+.user-profession .diagnostic {
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.user-profession .diagnostic span:first-of-type {
+  font-size: 2vw !important;
+}
+
+.user-profession .diagnostic span:last-of-type {
+  font-size: 1.2vw !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-profession .diagnostic span:first-of-type {
+    font-size: 1.8rem !important;
+  }
+  .user-profession .diagnostic span:last-of-type {
+    font-size: 1.1rem !important;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .diagnostic span:first-of-type {
+    font-size: 1.8rem !important;
+  }
+  .user-profession .diagnostic span:last-of-type {
+    font-size: 1.1rem !important;
+  }
+}
+
 .user-profession .unic-id {
-  /*  position: absolute;
-    top:0; */
+  position: absolute;
+  right: -9rem;
   background: #22252B;
   border-radius: 12px;
-  padding: 1.2rem;
+  padding: 1rem;
   color: #fff;
-  font-size: 2rem;
+}
+
+.user-profession .share-btn {
+  padding: 1.1rem 1.2rem;
+  border: 1px solid #ffedeee0;
+  border-radius: 15px;
 }
 
 /* ------------/PROFESSION-INFO --------------*/
