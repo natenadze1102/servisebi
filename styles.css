@@ -440,6 +440,12 @@ header .header__images {
 
 /*-------------------/SLIDER------------------*/
 /* ------------PROFESSION-INFO ---------------*/
+@media only screen and (max-width: 768px) {
+  .user-profession .col {
+    /* justify-content: space-between!important; */
+  }
+}
+
 .user-profession .craftsman {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -463,39 +469,56 @@ header .header__images {
 
 .user-profession .diagnostic {
   position: relative;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
 }
 
-.user-profession .diagnostic span:first-of-type {
-  font-size: 2vw !important;
+.user-profession .diagnostic p {
+  font-size: 2vw;
 }
 
-.user-profession .diagnostic span:last-of-type {
-  font-size: 1.2vw !important;
+.user-profession .diagnostic p span:nth-of-type(3) {
+  display: block;
+}
+
+.user-profession .diagnostic p span:nth-of-type(4) {
+  font-size: 1.1vw;
 }
 
 @media only screen and (max-width: 1024px) {
-  .user-profession .diagnostic span:first-of-type {
-    font-size: 1.8rem !important;
-  }
-  .user-profession .diagnostic span:last-of-type {
-    font-size: 1.1rem !important;
+  .user-profession .diagnostic {
+    /*   span {
+        font-size:  1.8rem!important;
+      }
+      span:nth-of-type(2) {
+        font-size:  1.8rem!important;
+      }
+      .share-btn {
+       
+      } */
   }
 }
 
 @media only screen and (max-width: 768px) {
-  .user-profession .diagnostic span:first-of-type {
+  .user-profession .diagnostic {
+    margin-right: 11rem;
+  }
+  .user-profession .diagnostic span {
     font-size: 1.8rem !important;
   }
-  .user-profession .diagnostic span:last-of-type {
-    font-size: 1.1rem !important;
+  .user-profession .diagnostic span:first-of-type {
+    display: block;
+  }
+  .user-profession .diagnostic span:nth-of-type(3) {
+    display: inline !important;
+  }
+  .user-profession .diagnostic span:nth-of-type(4) {
+    font-size: 1.2rem !important;
   }
 }
 
 .user-profession .unic-id {
   position: absolute;
   right: -9rem;
+  top: 0;
   background: #22252B;
   border-radius: 12px;
   padding: 1rem;
@@ -506,6 +529,12 @@ header .header__images {
   padding: 1.1rem 1.2rem;
   border: 1px solid #ffedeee0;
   border-radius: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: -13rem;
 }
 
 /* ------------/PROFESSION-INFO --------------*/
