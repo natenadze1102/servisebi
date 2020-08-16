@@ -81,6 +81,11 @@
     /* margin-right: 20rem!important; */
   }
 
+  .container-fluid {
+    max-width: 1440px!important;
+  }
+
+
   /* TEXT */
 
   .normal-size {
@@ -192,7 +197,7 @@
   
   /* -----------------CRAFTSMAN AND HIS CLIENTS-----------------*/
   .craftsman-clients {
-
+    
     display: none!important;
 
     .container-fluid {
@@ -464,9 +469,23 @@
  /* ------------PROFESSION-INFO ---------------*/
 
  .user-profession {
+  .row {
+    justify-content: center;
+    .col {
+      justify-content: center;
+    }
+  }
+ 
+  @media screen and (min-width:1024px) {
+    .container-fluid {
+     
+    }
 
-   @media only screen and (max-width:768px) {
-   }
+    .col {
+      justify-content: center;
+    }
+  }
+   
   .craftsman {
     display: flex;
     gap: 0.9rem;
@@ -554,6 +573,7 @@
   }
   .diagnostic__schedule {
     gap:1.5rem;
+    margin-bottom: 4rem;
     @media only screen and (max-width:768px) {
       border-bottom:1px solid #D5D5D5!important;
     }
@@ -649,6 +669,24 @@
       }
     }
   }
+  .user-profession__desc-header {
+    position: absolute;
+    left:-27.5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    @media only screen and (max-width:1024px) {
+      display: none;
+    }
+  }
+    .user-profession__desc-text {
+      margin-bottom: 3rem;
+      p {
+        font-family: NotoSansGeorgian;
+        font-size: 1.6rem!important;
+        font-weight: normal;
+      }
+
+    }
 }
 
  /* ------------/PROFESSION-INFO --------------*/

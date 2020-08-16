@@ -75,6 +75,10 @@ body {
   /* margin-right: 20rem!important; */
 }
 
+.container-fluid {
+  max-width: 1440px !important;
+}
+
 /* TEXT */
 .normal-size {
   font-size: 1.6rem !important;
@@ -448,6 +452,26 @@ header .header__images {
 
 /*-------------------/SLIDER------------------*/
 /* ------------PROFESSION-INFO ---------------*/
+.user-profession .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.user-profession .row .col {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 1024px) {
+  .user-profession .col {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .user-profession .craftsman {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -543,6 +567,7 @@ header .header__images {
 
 .user-profession .diagnostic__schedule {
   gap: 1.5rem;
+  margin-bottom: 4rem;
 }
 
 @media only screen and (max-width: 768px) {
@@ -638,6 +663,29 @@ header .header__images {
   .user-profession .diagnostic__schedule .diagnostic__schedule__block:nth-child(4) {
     display: none !important;
   }
+}
+
+.user-profession .user-profession__desc-header {
+  position: absolute;
+  left: -27.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-profession .user-profession__desc-header {
+    display: none;
+  }
+}
+
+.user-profession .user-profession__desc-text {
+  margin-bottom: 3rem;
+}
+
+.user-profession .user-profession__desc-text p {
+  font-family: NotoSansGeorgian;
+  font-size: 1.6rem !important;
+  font-weight: normal;
 }
 
 /* ------------/PROFESSION-INFO --------------*/
