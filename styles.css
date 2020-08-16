@@ -71,6 +71,10 @@ body {
   margin-bottom: 7rem;
 }
 
+.sec-m-left {
+  /* margin-right: 20rem!important; */
+}
+
 /* TEXT */
 .normal-size {
   font-size: 1.6rem !important;
@@ -344,6 +348,10 @@ header .header__images {
 /* -----------------/USER-INFO----------------*/
 /*-----------------/USER-INFO----------------*/
 /*-------------------SLIDER------------------*/
+.craftsman-portfolio {
+  margin-bottom: 4rem;
+}
+
 .craftsman-portfolio .carousel-control-prev-icon {
   position: absolute;
   left: 10% !important;
@@ -440,18 +448,12 @@ header .header__images {
 
 /*-------------------/SLIDER------------------*/
 /* ------------PROFESSION-INFO ---------------*/
-@media only screen and (max-width: 768px) {
-  .user-profession .col {
-    /* justify-content: space-between!important; */
-  }
-}
-
 .user-profession .craftsman {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 0.9rem;
-  margin-right: 8.6rem;
+  margin-right: 9rem;
 }
 
 .user-profession .craftsman .star-4 {
@@ -471,8 +473,12 @@ header .header__images {
   position: relative;
 }
 
+.user-profession .diagnostic .share-btn {
+  position: absolute;
+}
+
 .user-profession .diagnostic p {
-  font-size: 2vw;
+  font-size: 2.4rem;
 }
 
 .user-profession .diagnostic p span:nth-of-type(3) {
@@ -480,26 +486,21 @@ header .header__images {
 }
 
 .user-profession .diagnostic p span:nth-of-type(4) {
-  font-size: 1.1vw;
+  font-size: 1.7rem;
 }
 
 @media only screen and (max-width: 1024px) {
-  .user-profession .diagnostic {
-    /*   span {
-        font-size:  1.8rem!important;
-      }
-      span:nth-of-type(2) {
-        font-size:  1.8rem!important;
-      }
-      .share-btn {
-       
-      } */
+  .user-profession .diagnostic span {
+    font-size: 2.2rem;
+  }
+  .user-profession .diagnostic img {
+    width: 1rem;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .user-profession .diagnostic {
-    margin-right: 11rem;
+    /*  margin-right: 11rem; */
   }
   .user-profession .diagnostic span {
     font-size: 1.8rem !important;
@@ -511,13 +512,16 @@ header .header__images {
     display: inline !important;
   }
   .user-profession .diagnostic span:nth-of-type(4) {
-    font-size: 1.2rem !important;
+    font-size: 0.8rem !important;
+  }
+  .user-profession .diagnostic .share-btn img {
+    width: 1rem;
   }
 }
 
 .user-profession .unic-id {
   position: absolute;
-  right: -9rem;
+  right: 5rem;
   top: 0;
   background: #22252B;
   border-radius: 12px;
@@ -534,7 +538,106 @@ header .header__images {
   display: flex;
   position: absolute;
   top: 0;
-  right: -13rem;
+  right: 1rem;
+}
+
+.user-profession .diagnostic__schedule {
+  gap: 1.5rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .diagnostic__schedule {
+    border-bottom: 1px solid #D5D5D5 !important;
+  }
+}
+
+.user-profession .diagnostic__schedule span:first-of-type {
+  font-family: "NotoSansGeorgian";
+  font-weight: normal;
+  font-size: 1.1rem !important;
+}
+
+.user-profession .diagnostic__schedule span:last-of-type {
+  font-size: 1.3rem !important;
+}
+
+.user-profession .diagnostic__schedule .diagnostic__schedule__block {
+  padding: 1.8rem 2.2rem 1.4rem 1.6rem;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+  border: 1px solid #E3F4E2;
+  border-radius: 15px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 auto;
+          flex: 1 0 auto;
+}
+
+.user-profession .diagnostic__schedule .diagnostic__schedule__block:hover {
+  background-color: #EDF3FB;
+}
+
+.user-profession .diagnostic__schedule .diagnostic__schedule__block .clock {
+  font-size: 2rem;
+  border-radius: 100%;
+  margin-right: 1.6rem;
+  --fa-primary-color: #2B89EE;
+  --fa-secondary-color: #C0DBFF;
+  --fa-secondary-opacity: 1;
+}
+
+.user-profession .diagnostic__schedule .diagnostic__schedule__block .coins {
+  font-size: 2rem;
+  border-radius: 100%;
+  margin-right: 1.6rem;
+  --fa-primary-color: #b5d81b;
+  --fa-secondary-color: #C0DBFF;
+  --fa-secondary-opacity: 1;
+}
+
+.user-profession .diagnostic__schedule .diagnostic__schedule__block .dollar {
+  font-size: 2rem;
+  border-radius: 100%;
+  margin-right: 1.6rem;
+  --fa-primary-color: #b5d81b;
+  --fa-secondary-color: #C0DBFF;
+  --fa-secondary-opacity: 1;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-profession .diagnostic__schedule {
+    gap: 1.7rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .diagnostic__schedule {
+    border: none;
+    gap: 1rem;
+  }
+  .user-profession .diagnostic__schedule .diagnostic__schedule__block {
+    padding: 1.8rem 0rem 1.4rem 1.6rem;
+    line-height: 1;
+    border: none;
+    padding-bottom: 1rem;
+  }
+  .user-profession .diagnostic__schedule .diagnostic__schedule__block div:last-of-type {
+    border-right: 1px solid #D5D5D5;
+    border-radius: 2px;
+    padding-right: 2rem;
+  }
+  .user-profession .diagnostic__schedule .diagnostic__schedule__block:nth-of-type(3) {
+    border: none !important;
+    padding-right: 0 !important;
+  }
+  .user-profession .diagnostic__schedule .diagnostic__schedule__block:nth-of-type(3) .coin svg {
+    margin-right: 0;
+  }
+  .user-profession .diagnostic__schedule .diagnostic__schedule__block:nth-of-type(3) div:last-of-type {
+    display: none;
+  }
+  .user-profession .diagnostic__schedule .diagnostic__schedule__block:nth-child(4) {
+    display: none !important;
+  }
 }
 
 /* ------------/PROFESSION-INFO --------------*/
@@ -574,17 +677,6 @@ header .header__images {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-}
-
-.estimates .clock {
-  font-size: 7rem;
-  border-radius: 100%;
-  background-color: #90B4E5;
-  padding: 20px;
-  color: blue;
-  --fa-primary-color: #90B4E5;
-  --fa-secondary-color: #FFFFFF;
-  --fa-secondary-opacity: 1;
 }
 
 .shield {

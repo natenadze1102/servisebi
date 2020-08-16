@@ -77,6 +77,10 @@
     margin-bottom: 7rem;
   }
 
+  .sec-m-left {
+    /* margin-right: 20rem!important; */
+  }
+
   /* TEXT */
 
   .normal-size {
@@ -361,12 +365,11 @@
 
   /*-------------------SLIDER------------------*/
   .craftsman-portfolio {
-
+    margin-bottom: 4rem;
     .carousel-control-prev-icon {
       position: absolute;
       left:10%!important;
       background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='black' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E")!important;
-     
     }
     
     .carousel-control-next-icon {
@@ -461,15 +464,13 @@
  /* ------------PROFESSION-INFO ---------------*/
 
  .user-profession {
+
    @media only screen and (max-width:768px) {
-     .col {
-       /* justify-content: space-between!important; */
-     }
    }
   .craftsman {
     display: flex;
     gap: 0.9rem;
-    margin-right: 8.6rem;
+    margin-right: 9rem;
 
     .star-4 {
       font-size: 1.2rem;
@@ -482,12 +483,14 @@
       display: none!important;
     }
   }
-
   .diagnostic {
     position: relative;
    
+    .share-btn {
+      position: absolute;
+    }
     p {
-      font-size: 2vw;
+      font-size: 2.4rem;
       span:nth-of-type(2) {
         
       } 
@@ -495,24 +498,21 @@
         display: block;
       }
       span:nth-of-type(4){
-       font-size: 1.1vw;
+       font-size: 1.7rem;
        
       }
     }
 
     @media only screen and (max-width:1024px) {
-    /*   span {
-        font-size:  1.8rem!important;
+      span {
+        font-size: 2.2rem;
       }
-      span:nth-of-type(2) {
-        font-size:  1.8rem!important;
+      img {
+        width: 1rem;
       }
-      .share-btn {
-       
-      } */
     }
     @media only screen and (max-width:768px) {
-      margin-right: 11rem;
+     /*  margin-right: 11rem; */
       span {
         font-size:  1.8rem!important;
       }
@@ -525,40 +525,134 @@
         display: inline!important;
       }
       span:nth-of-type(4){
-        font-size: 1.2rem!important;
-        
-   
+        font-size: 0.8rem!important;
       }
       .share-btn {
-      
+        img {
+          width: 1rem;
+        }
       }
     }
   }
   .unic-id {
     position: absolute;
-    right: -9rem;
+    right: 5rem;
     top:0;
     background: #22252B;
     border-radius: 12px;
     padding: 1rem;
     color:#fff;
- }
+  }
+  .share-btn {
+      padding: 1.1rem 1.2rem;
+      border: 1px solid #ffedeee0;
+      border-radius: 15px;
+      display: flex;
+      position: absolute;
+      top:0;
+      right:1rem;
+  }
+  .diagnostic__schedule {
+    gap:1.5rem;
+    @media only screen and (max-width:768px) {
+      border-bottom:1px solid #D5D5D5!important;
+    }
+    
 
- .share-btn {
-    padding: 1.1rem 1.2rem;
-    border: 1px solid #ffedeee0;
-    border-radius: 15px;
-    display: flex;
-    position: absolute;
-    top:0;
-    right:-13rem;
- }
- 
+    span:first-of-type {
+      font-family: "NotoSansGeorgian";
+      font-weight: normal;
+      font-size: 1.1rem!important;
+    }
+
+    span:last-of-type {
+      font-size: 1.3rem!important;
+    }
+
+    .diagnostic__schedule__block {
+
+      padding: 1.8rem 2.2rem 1.4rem 1.6rem;
+      transition: all .2s;
+      border: 1px solid #E3F4E2;
+      border-radius: 15px;
+      flex:1 0 auto;
+     
+      &:hover {
+        background-color: #EDF3FB;
+      }
+
+      .clock {
+      font-size: 2rem;
+      border-radius: 100%;
+      margin-right: 1.6rem;
+     
+      --fa-primary-color: #2B89EE;
+      --fa-secondary-color: #C0DBFF;
+      --fa-secondary-opacity: 1;
+    }
+
+    .coins {
+      font-size: 2rem;
+      border-radius: 100%;
+      margin-right: 1.6rem;
+      
+      --fa-primary-color: #b5d81b;
+      --fa-secondary-color: #C0DBFF;
+      --fa-secondary-opacity: 1;
+    }
+    
+    .dollar {
+      font-size: 2rem;
+      border-radius: 100%;
+      margin-right: 1.6rem;
+      
+      --fa-primary-color: #b5d81b;
+      --fa-secondary-color: #C0DBFF;
+      --fa-secondary-opacity: 1;
+    }
+    
+    }
+    
+    @media only screen and (max-width:1024px) {
+      gap:1.7rem;
+    }
+
+    @media only screen and (max-width:768px) {
+      border:none;
+      gap:1rem;
+  
+      .diagnostic__schedule__block {
+        padding: 1.8rem 0rem 1.4rem 1.6rem;
+        line-height: 1;
+        border:none;
+        padding-bottom: 1rem;
+        div:last-of-type {
+          border-right: 1px solid #D5D5D5;
+          border-radius: 2px;
+          padding-right: 2rem;
+        }
+        &:nth-of-type(3) {
+          border:none!important; 
+          padding-right: 0!important;
+          .coin {
+            svg {
+              margin-right: 0;
+            }
+          }
+          div:last-of-type {
+            display: none;
+          }
+        }
+        &:nth-child(4) {
+          display: none!important;
+        }
+      }
+    }
+  }
 }
 
  /* ------------/PROFESSION-INFO --------------*/
   .estimates {
-
     &__first {
      
      &:hover {
@@ -595,17 +689,7 @@
       }
     }
 
-    .clock {
-      font-size: 7rem;
-      border-radius: 100%;
-      background-color: #90B4E5;
-      padding: 20px;
-      color: blue;
-      --fa-primary-color: #90B4E5;
-      --fa-secondary-color: #FFFFFF;
-      --fa-secondary-opacity: 1;
-
-    }
+ 
   }
 
   .shield {
