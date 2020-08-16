@@ -71,10 +71,6 @@ body {
   margin-bottom: 7rem;
 }
 
-.sec-m-left {
-  /* margin-right: 20rem!important; */
-}
-
 .container-fluid {
   max-width: 1440px !important;
 }
@@ -327,11 +323,11 @@ header .header__images {
 
 .user-info .typeOfService span {
   font-family: Helventica;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 
 .user-info .typeOfService span:nth-last-child() {
-  background-color: #EDF3FB;
+  background-color: #EDF3fB;
 }
 
 .user-info .typeOfService img {
@@ -517,9 +513,6 @@ header .header__images {
   .user-profession .diagnostic span {
     font-size: 2.2rem;
   }
-  .user-profession .diagnostic img {
-    width: 1rem;
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -527,7 +520,7 @@ header .header__images {
     /*  margin-right: 11rem; */
   }
   .user-profession .diagnostic span {
-    font-size: 1.8rem !important;
+    font-size: 1.8rem;
   }
   .user-profession .diagnostic span:first-of-type {
     display: block;
@@ -665,7 +658,7 @@ header .header__images {
   }
 }
 
-.user-profession .user-profession__desc-header {
+.user-profession .left-header {
   position: absolute;
   left: -27.5rem;
   font-size: 2.4rem;
@@ -673,9 +666,13 @@ header .header__images {
 }
 
 @media only screen and (max-width: 1024px) {
-  .user-profession .user-profession__desc-header {
+  .user-profession .left-header {
     display: none;
   }
+}
+
+.user-profession .problem-report {
+  margin-bottom: 6.4rem;
 }
 
 .user-profession .user-profession__desc-text {
@@ -686,6 +683,132 @@ header .header__images {
   font-family: NotoSansGeorgian;
   font-size: 1.6rem !important;
   font-weight: normal;
+}
+
+@media only screen and (max-width: 748px) {
+  .user-profession .user-profession__desc-text span {
+    font-size: 1.4rem !important;
+  }
+}
+
+.user-profession .left-header-types {
+  position: absolute;
+  left: -27.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-profession .left-header-types {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .left-header-types {
+    display: block;
+    left: 0;
+    bottom: 25%;
+  }
+  .user-profession .left-header-types h2 {
+    font-size: 1.3rem;
+  }
+}
+
+.user-profession .service-types {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap !important;
+      flex-wrap: wrap !important;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 100%;
+          flex: 1 0 100%;
+  -webkit-box-pack: center !important;
+      -ms-flex-pack: center !important;
+          justify-content: center !important;
+}
+
+.user-profession .service-types .service-types__group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-family: Helvetica;
+  font-size: 1.6rem;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  gap: 20rem;
+}
+
+.user-profession .service-types .service-types__group div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  /* margin-right: auto; */
+  font-size: 2rem;
+  padding-bottom: 5rem;
+}
+
+.user-profession .service-types .service-types__group div svg * {
+  color: #b4b4b4;
+}
+
+.user-profession .service-types .service-types__group div span {
+  margin-left: 1rem !important;
+  font-size: 1.6rem;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .service-types {
+    -webkit-box-orient: horizontal !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: row !important;
+            flex-direction: row !important;
+    font-size: 1rem;
+  }
+  .user-profession .service-types .service-types__group {
+    gap: 0;
+  }
+  .user-profession .service-types .service-types__group div {
+    padding-bottom: 3rem;
+  }
+  .user-profession .service-types .service-types__group div span {
+    font-size: 1.4rem;
+  }
+  .user-profession .service-types .service-types__group:first-of-type {
+    -webkit-box-orient: vertical !important;
+    -webkit-box-direction: normal !important;
+        -ms-flex-direction: column !important;
+            flex-direction: column !important;
+  }
+  .user-profession .service-types .service-types__group:first-of-type div {
+    margin-right: 1rem;
+  }
+  .user-profession .service-types .service-types__group:last-of-type {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.user-profession .service-types-more {
+  position: absolute;
+  font-family: Helvetica;
+  font-weight: normal;
+  font-size: 1.1rem;
+  background-color: #EDF3FB;
+  padding: 1rem;
+  border-radius: 10px;
 }
 
 /* ------------/PROFESSION-INFO --------------*/
