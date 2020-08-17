@@ -107,6 +107,8 @@ body {
 }
 
 /*..............................*/
+/* ----------------SCSS -----------------*/
+/* ---------------/SCSS------------------ */
 /* ---------------HEADER----------------------*/
 header {
   border-bottom: 1px solid #EDF3FB;
@@ -340,9 +342,10 @@ header .header__images {
   padding: 1.3rem;
 }
 
-.user-info .location address {
+.user-info .location address span {
   font-family: NotoSansGeorgian;
   font-size: 1.6rem;
+  font-weight: normal !important;
 }
 
 /* -----------------/USER-INFO----------------*/
@@ -798,8 +801,8 @@ header .header__images {
   }
 }
 
-.user-profession .service-types-more {
-  position: absolute;
+.user-profession .service-types-more span {
+  display: inline;
   font-family: Helvetica;
   font-weight: normal;
   font-size: 1.1rem !important;
@@ -817,6 +820,25 @@ header .header__images {
 @media only screen and (max-width: 1024px) {
   .user-profession .service-types-more span {
     font-size: 1.1rem !important;
+  }
+}
+
+.user-profession .craftsman__address {
+  margin-top: 7rem;
+  font-family: NotoSansGeorgian;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.6rem;
+}
+
+.user-profession .craftsman__address-map iframe {
+  max-width: 100%;
+  border-radius: 25px;
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .craftsman__address-map iframe {
+    border-radius: 20px;
   }
 }
 

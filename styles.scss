@@ -33,7 +33,7 @@
   /* FONTS */
 
   .font-primary {
-    font-family: FiraGO
+    font-family: FiraGO;
   }
 
   .font-secondary {
@@ -117,7 +117,10 @@
   }
 
   /*..............................*/
-
+/* ----------------SCSS -----------------*/
+ $font-primary:FiraGo;
+ $font-secondary:NotoSansGeorgian;
+/* ---------------/SCSS------------------ */
 
   /* ---------------HEADER----------------------*/
   header {
@@ -355,8 +358,11 @@
 
     .location {
       address {
-        font-family: NotoSansGeorgian;
-        font-size: 1.6rem;
+        span {
+          font-family: $font-secondary;
+          font-size: 1.6rem;
+          font-weight: normal!important;
+        }
       }
     }
 
@@ -761,13 +767,17 @@
   }
 
   .service-types-more {
-    position: absolute;
-    font-family: Helvetica;
-    font-weight: normal;
-    font-size:1.1rem!important;
-    background-color:#EDF3FB;
-    padding:1rem;
-    border-radius: 10px;
+    span {
+      display: inline;
+      font-family: Helvetica;
+      font-weight: normal;
+      font-size:1.1rem!important;
+      background-color:#EDF3FB;
+      padding:1rem;
+      border-radius: 10px;
+    }
+    
+
     @media only screen and (max-width:748px) {
       span {
         font-size:1.1rem!important;
@@ -781,12 +791,29 @@
      
     }
   }
+  .craftsman__address{
+    margin-top: 7rem;
+    font-family: $font-secondary;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 1.6rem;
+  }
+
+  .craftsman__address-map {
+    iframe {
+      max-width: 100%;
+      border-radius: 25px;
+
+      @media only screen and (max-width:768px) {
+        border-radius: 20px;
+      }
+    }
+  }
 }
 
  /* ------------/PROFESSION-INFO --------------*/
   .estimates {
     &__first {
-     
      &:hover {
       background-color: #F8EBC2;
      }
