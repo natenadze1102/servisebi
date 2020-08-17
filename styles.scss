@@ -484,6 +484,8 @@
     margin-right: 9rem;
 
     .star-4 {
+      display: flex;
+      align-items:center;
       font-size: 1.2rem;
       background-color: #F2F2F2;
       border-radius: 8px;
@@ -499,6 +501,7 @@
    
     .share-btn {
       position: absolute;
+      right:23%;
     }
     p {
       font-size: 2.4rem;
@@ -542,7 +545,7 @@
   }
   .unic-id {
     position: absolute;
-    right: 5rem;
+    right: 28%;
     top:0;
     background: #22252B;
     border-radius: 12px;
@@ -582,7 +585,6 @@
       transition: all .2s;
       border: 1px solid #E3F4E2;
       border-radius: 15px;
-      flex:1 0 auto;
      
       &:hover {
         background-color: #EDF3FB;
@@ -673,11 +675,13 @@
     p {
       font-family: NotoSansGeorgian;
       font-size: 1.6rem!important;
+      margin-right: 10rem;
       font-weight: normal;
     }
     @media only screen and (max-width:748px) {
-      span {
+      p {
         font-size: 1.4rem!important;
+        margin-right: 0;
       }
     }
   }
@@ -693,7 +697,7 @@
     @media only screen and (max-width:768px) {
       display: block;
       left:0;
-      bottom:25%;
+      bottom:29%;
       h2 {
         font-size: 1.3rem;
       }
@@ -702,21 +706,19 @@
   .service-types {
     position: relative;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap!important;
-    flex:1 0 100%;
-    justify-content: center!important;
     
     .service-types__group{
       display: flex;
       font-family: Helvetica;
       font-size: 1.6rem;
       flex:1 0 50%;
-      gap:20rem;
+      gap:10rem;
       div {
         display: flex;
         /* margin-right: auto; */
         font-size:2rem;
+        font-weight: normal;
         padding-bottom: 5rem;
         
         svg {
@@ -762,10 +764,22 @@
     position: absolute;
     font-family: Helvetica;
     font-weight: normal;
-    font-size:1.1rem;
+    font-size:1.1rem!important;
     background-color:#EDF3FB;
     padding:1rem;
     border-radius: 10px;
+    @media only screen and (max-width:748px) {
+      span {
+        font-size:1.1rem!important;
+      }
+     
+    }
+    @media only screen and (max-width:1024px) {
+      span {
+        font-size:1.1rem!important;
+      }
+     
+    }
   }
 }
 
