@@ -470,13 +470,13 @@
 
  /* ------------PROFESSION-INFO ---------------*/
 
- .user-profession {
-  .row {
+.user-profession {
+.row {
+  justify-content: center;
+  .col {
     justify-content: center;
-    .col {
-      justify-content: center;
-    }
   }
+}
  
   @media screen and (min-width:1024px) {
     .col {
@@ -507,10 +507,10 @@
    
     .share-btn {
       position: absolute;
-      right:23%;
+      right:13%;
     }
     p {
-      font-size: 2.4rem;
+      font-size: 3.2rem;
  
       span:nth-of-type(3){
         display: block;
@@ -551,7 +551,7 @@
   }
   .unic-id {
     position: absolute;
-    right: 28%;
+    right: 18%;
     top:0;
     background: #22252B;
     border-radius: 12px;
@@ -568,7 +568,7 @@
       right:1rem;
   }
   .diagnostic__schedule {
-    gap:1.5rem;
+    gap:4.5rem;
     margin-bottom: 4rem;
     @media only screen and (max-width:768px) {
       border-bottom:1px solid #D5D5D5!important;
@@ -627,10 +627,6 @@
     }
     
     }
-    
-    @media only screen and (max-width:1024px) {
-      gap:1.7rem;
-    }
 
     @media only screen and (max-width:768px) {
       border:none;
@@ -680,16 +676,19 @@
     margin-bottom: 3rem;
     p {
       font-family: NotoSansGeorgian;
-      font-size: 1.6rem!important;
+      font-size: 1.6rem;
       margin-right: 10rem;
       font-weight: normal;
-    }
-    @media only screen and (max-width:748px) {
-      p {
+
+      @media only screen and (max-width:748px) { 
         font-size: 1.4rem!important;
-        margin-right: 0;
+        margin-right: 0!important;
+      }
+      @media only screen and (max-width:1024px) { 
+        
       }
     }
+    
   }
   .left-header-types {
     position: absolute;
@@ -703,7 +702,7 @@
     @media only screen and (max-width:768px) {
       display: block;
       left:0;
-      bottom:29%;
+      bottom:49%;
       h2 {
         font-size: 1.3rem;
       }
@@ -719,7 +718,7 @@
       font-family: Helvetica;
       font-size: 1.6rem;
       flex:1 0 50%;
-      gap:10rem;
+      gap:14rem;
       div {
         display: flex;
         /* margin-right: auto; */
@@ -762,13 +761,12 @@
         flex-direction: column;
         align-items:center;
       }
-      
     }
   }
 
   .service-types-more {
     span {
-      display: inline;
+      display: inline!important;
       font-family: Helvetica;
       font-weight: normal;
       font-size:1.1rem!important;
@@ -777,7 +775,6 @@
       border-radius: 10px;
     }
     
-
     @media only screen and (max-width:748px) {
       span {
         font-size:1.1rem!important;
@@ -788,15 +785,44 @@
       span {
         font-size:1.1rem!important;
       }
-     
     }
   }
-  .craftsman__address{
+
+  .left-header-address {
+    position: relative;
+    left:-27.5rem;
+    font-size: 2.4rem;
+    font-weight: bold;
+    top:-3.5rem;
+
+    @media only screen and (max-width:1024px) {
+      display: none;
+    }
+    @media only screen and (max-width:768px) {
+      font-size: 2.4rem;
+      display: inline!important;
+      left:0!important;
+      top:-7rem;
+    }
+  }
+
+  .craftsman__address {
     margin-top: 7rem;
     font-family: $font-secondary;
     font-style: normal;
     font-weight: normal;
     font-size: 1.6rem;
+    position: relative;
+    @media only screen and (max-width:1024px) {
+      span {
+        font-size: 1.4rem;
+      }
+    }
+    @media only screen and (max-width:768px) {
+      span:last-of-type {
+        display: none;
+      }
+    }
   }
 
   .craftsman__address-map {
@@ -809,10 +835,14 @@
       }
     }
   }
+
+  .user-estimates {
+
+  }
 }
 
  /* ------------/PROFESSION-INFO --------------*/
-  .estimates {
+ /*  .estimates {
     &__first {
      &:hover {
       background-color: #F8EBC2;
@@ -888,5 +918,5 @@
   }
   .fixed-bottom {
     margin-bottom: -4.5rem;
-  }
+  } */
  

@@ -504,11 +504,11 @@ header .header__images {
 
 .user-profession .diagnostic .share-btn {
   position: absolute;
-  right: 23%;
+  right: 13%;
 }
 
 .user-profession .diagnostic p {
-  font-size: 2.4rem;
+  font-size: 3.2rem;
 }
 
 .user-profession .diagnostic p span:nth-of-type(3) {
@@ -548,7 +548,7 @@ header .header__images {
 
 .user-profession .unic-id {
   position: absolute;
-  right: 28%;
+  right: 18%;
   top: 0;
   background: #22252B;
   border-radius: 12px;
@@ -569,7 +569,7 @@ header .header__images {
 }
 
 .user-profession .diagnostic__schedule {
-  gap: 1.5rem;
+  gap: 4.5rem;
   margin-bottom: 4rem;
 }
 
@@ -628,12 +628,6 @@ header .header__images {
   --fa-secondary-opacity: 1;
 }
 
-@media only screen and (max-width: 1024px) {
-  .user-profession .diagnostic__schedule {
-    gap: 1.7rem;
-  }
-}
-
 @media only screen and (max-width: 768px) {
   .user-profession .diagnostic__schedule {
     border: none;
@@ -688,7 +682,7 @@ header .header__images {
 
 .user-profession .user-profession__desc-text p {
   font-family: NotoSansGeorgian;
-  font-size: 1.6rem !important;
+  font-size: 1.6rem;
   margin-right: 10rem;
   font-weight: normal;
 }
@@ -696,7 +690,7 @@ header .header__images {
 @media only screen and (max-width: 748px) {
   .user-profession .user-profession__desc-text p {
     font-size: 1.4rem !important;
-    margin-right: 0;
+    margin-right: 0 !important;
   }
 }
 
@@ -717,7 +711,7 @@ header .header__images {
   .user-profession .left-header-types {
     display: block;
     left: 0;
-    bottom: 29%;
+    bottom: 49%;
   }
   .user-profession .left-header-types h2 {
     font-size: 1.3rem;
@@ -742,7 +736,7 @@ header .header__images {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 50%;
           flex: 1 0 50%;
-  gap: 10rem;
+  gap: 14rem;
 }
 
 .user-profession .service-types .service-types__group div {
@@ -802,7 +796,7 @@ header .header__images {
 }
 
 .user-profession .service-types-more span {
-  display: inline;
+  display: inline !important;
   font-family: Helvetica;
   font-weight: normal;
   font-size: 1.1rem !important;
@@ -823,12 +817,48 @@ header .header__images {
   }
 }
 
+.user-profession .left-header-address {
+  position: relative;
+  left: -27.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+  top: -3.5rem;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-profession .left-header-address {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .left-header-address {
+    font-size: 2.4rem;
+    display: inline !important;
+    left: 0 !important;
+    top: -7rem;
+  }
+}
+
 .user-profession .craftsman__address {
   margin-top: 7rem;
   font-family: NotoSansGeorgian;
   font-style: normal;
   font-weight: normal;
   font-size: 1.6rem;
+  position: relative;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-profession .craftsman__address span {
+    font-size: 1.4rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .user-profession .craftsman__address span:last-of-type {
+    display: none;
+  }
 }
 
 .user-profession .craftsman__address-map iframe {
@@ -843,79 +873,81 @@ header .header__images {
 }
 
 /* ------------/PROFESSION-INFO --------------*/
-.estimates__first {
-  background-color: #fff;
-  border-radius: 25px;
-  -webkit-box-shadow: 10px 7px 44px -27px rgba(0, 0, 0, 0.83);
-  box-shadow: 10px 7px 44px -27px rgba(0, 0, 0, 0.83);
-  -webkit-transition: all .3s;
-  transition: all .3s;
-}
+/*  .estimates {
+    &__first {
+     &:hover {
+      background-color: #F8EBC2;
+     }
+     background-color: #fff;
+      border-radius: 25px;
+      -webkit-box-shadow: 10px 7px 44px -27px rgba(0,0,0,0.83);
+      -moz-box-shadow: 10px 7px 44px -27px rgba(0,0,0,0.83);
+      box-shadow: 10px 7px 44px -27px rgba(0,0,0,0.83);
+      transition: all .3s;
 
-.estimates__first:hover {
-  background-color: #F8EBC2;
-}
+      .estimates-icons-shape{
+        padding: 1.8rem 4.5rem 1.7rem 4.5rem;
+      }
+      .stars {
+        font-size: 7rem;
+        border-radius: 100%;
+        background-color: #fff8f8;
+        padding: 20px;
+        color: blue;
+        --fa-primary-color: #FFDF77;
+        --fa-secondary-color: #FFEDB2;
+        --fa-secondary-opacity: 1;
+      }
 
-.estimates__first .estimates-icons-shape {
-  padding: 1.8rem 4.5rem 1.7rem 4.5rem;
-}
+      .estimate-bottom {
+        padding: 1.3rem 0.9rem 1.2rem 1.7rem;
+        margin: 1.3rem 0 0.9rem 0;
+        background-color: #fff;
+        border-radius: 10px;
+        align-self: center;
+      }
+    }
 
-.estimates__first .stars {
-  font-size: 7rem;
-  border-radius: 100%;
-  background-color: #fff8f8;
-  padding: 20px;
-  color: blue;
-  --fa-primary-color: #FFDF77;
-  --fa-secondary-color: #FFEDB2;
-  --fa-secondary-opacity: 1;
-}
+ 
+  }
 
-.estimates__first .estimate-bottom {
-  padding: 1.3rem 0.9rem 1.2rem 1.7rem;
-  margin: 1.3rem 0 0.9rem 0;
-  background-color: #fff;
-  border-radius: 10px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
-}
+  .shield {
+    font-size: 7rem;
+    border-radius: 100%;
+    background-color: #96DC7B;
+    padding: 20px;
+    color: blue;
+    --fa-primary-color: #96DC7B;
+    --fa-secondary-color: #FFFFFF;
+    --fa-secondary-opacity: 1;
+  }
 
-.shield {
-  font-size: 7rem;
-  border-radius: 100%;
-  background-color: #96DC7B;
-  padding: 20px;
-  color: blue;
-  --fa-primary-color: #96DC7B;
-  --fa-secondary-color: #FFFFFF;
-  --fa-secondary-opacity: 1;
-}
+  .hands {
+    font-size: 2rem;
+    border-radius: 100%;
+    background-color: #FFAB61;
+    padding: 20px;
+    color: blue;
+    --fa-primary-color: #FFFFFF;
+    --fa-secondary-color: #FFEEDF;
+    --fa-secondary-opacity: .7;
 
-.hands {
-  font-size: 2rem;
-  border-radius: 100%;
-  background-color: #FFAB61;
-  padding: 20px;
-  color: blue;
-  --fa-primary-color: #FFFFFF;
-  --fa-secondary-color: #FFEEDF;
-  --fa-secondary-opacity: .7;
-}
+    .fa-praying-hands {
+      font-size: 2.4rem;
+    }
+  }
 
-.hands .fa-praying-hands {
-  font-size: 2.4rem;
-}
-
-.sim-categories .col-7 span {
-  border: 1px solid #BDD9FF;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  border-radius: 10px;
-  padding: 1.3rem 1.6rem;
-}
-
-.fixed-bottom {
-  margin-bottom: -4.5rem;
-}
+  .sim-categories {
+    .col-7 {
+      span {
+        border: 1px solid #BDD9FF;
+        box-sizing: border-box;
+        border-radius: 10px;
+        padding: 1.3rem 1.6rem;
+      }
+    }
+  }
+  .fixed-bottom {
+    margin-bottom: -4.5rem;
+  } */
 /*# sourceMappingURL=styles.css.map */
