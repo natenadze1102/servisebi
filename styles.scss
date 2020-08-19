@@ -125,7 +125,7 @@
   /* ---------------HEADER----------------------*/
   header {
     border-bottom: 1px solid #EDF3FB;
-    padding: 1.4rem 0 1.5rem 0;
+    /* padding: 1.4rem 0 1.5rem 0; */
 
     .header-phone {
         display: none;
@@ -474,7 +474,7 @@
 .row {
   justify-content: center;
   .col {
-    justify-content: center;
+    
   }
 }
  
@@ -680,7 +680,7 @@
       margin-right: 10rem;
       font-weight: normal;
 
-      @media only screen and (max-width:748px) { 
+      @media only screen and (max-width:768px) { 
         font-size: 1.4rem!important;
         margin-right: 0!important;
       }
@@ -775,7 +775,7 @@
       border-radius: 10px;
     }
     
-    @media only screen and (max-width:748px) {
+    @media only screen and (max-width:768px) {
       span {
         font-size:1.1rem!important;
       }
@@ -838,7 +838,9 @@
 
   .user-estimates {
     gap:2rem;
-
+    @media only screen and (max-width:576px) {
+      justify-content: center;
+    }
     .left-header-estimates {
       position: absolute;
       left:-27.5rem;
@@ -860,7 +862,19 @@
       &:hover {
         background-color: #F8EBC2;
       }
-      max-width: 100%;
+      @media only screen and (max-width:768px) {
+        
+        &:nth-of-type(4) {
+          /* display: none!important; */
+        }
+      }
+      @media only screen and (max-width:575px) {
+        
+        &:nth-of-type(3) {
+          /* display: none!important; */
+        }
+      }
+     
       transition: .3s;
       background-color:#FFFFFF;
       border-radius: 25px;
@@ -876,6 +890,8 @@
       }
 
       .estimates-span-3 {
+        display:flex;
+        align-items: center;
         span:first-of-type {
           font-style: normal;
           font-weight: bold;
@@ -885,6 +901,7 @@
           color: #A7A8AA;
           font-weight: normal;
           font-size: 1.3rem;
+          margin-right: .4rem;
         }
         span:nth-of-type(3) {
           color:blue;

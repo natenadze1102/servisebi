@@ -112,7 +112,7 @@ body {
 /* ---------------HEADER----------------------*/
 header {
   border-bottom: 1px solid #EDF3FB;
-  padding: 1.4rem 0 1.5rem 0;
+  /* padding: 1.4rem 0 1.5rem 0; */
 }
 
 header .header-phone {
@@ -457,12 +457,6 @@ header .header__images {
           justify-content: center;
 }
 
-.user-profession .row .col {
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 @media screen and (min-width: 1024px) {
   .user-profession .col {
     -webkit-box-pack: center;
@@ -687,7 +681,7 @@ header .header__images {
   font-weight: normal;
 }
 
-@media only screen and (max-width: 748px) {
+@media only screen and (max-width: 768px) {
   .user-profession .user-profession__desc-text p {
     font-size: 1.4rem !important;
     margin-right: 0 !important;
@@ -805,7 +799,7 @@ header .header__images {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 748px) {
+@media only screen and (max-width: 768px) {
   .user-profession .service-types-more span {
     font-size: 1.1rem !important;
   }
@@ -880,6 +874,14 @@ header .header__images {
   gap: 2rem;
 }
 
+@media only screen and (max-width: 576px) {
+  .user-profession .user-estimates {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 .user-profession .user-estimates .left-header-estimates {
   position: absolute;
   left: -27.5rem;
@@ -903,7 +905,6 @@ header .header__images {
 }
 
 .user-profession .user-estimates .user-estimates__icon-block {
-  max-width: 100%;
   -webkit-transition: .3s;
   transition: .3s;
   background-color: #FFFFFF;
@@ -916,12 +917,33 @@ header .header__images {
   background-color: #F8EBC2;
 }
 
+@media only screen and (max-width: 768px) {
+  .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(4) {
+    /* display: none!important; */
+  }
+}
+
+@media only screen and (max-width: 575px) {
+  .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(3) {
+    /* display: none!important; */
+  }
+}
+
 .user-profession .user-estimates .user-estimates__icon-block .user-estimates__icon-block-estimates {
   font-size: .9rem;
   padding: 1.3rem;
   border-radius: 1rem;
   background-color: white;
   margin-bottom: 1.7rem;
+}
+
+.user-profession .user-estimates .user-estimates__icon-block .estimates-span-3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .user-profession .user-estimates .user-estimates__icon-block .estimates-span-3 span:first-of-type {
@@ -934,6 +956,7 @@ header .header__images {
   color: #A7A8AA;
   font-weight: normal;
   font-size: 1.3rem;
+  margin-right: .4rem;
 }
 
 .user-profession .user-estimates .user-estimates__icon-block .estimates-span-3 span:nth-of-type(3) {
