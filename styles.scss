@@ -826,10 +826,10 @@
   }
 
   .craftsman__address-map {
+    margin-bottom: 6.2rem;
     iframe {
       max-width: 100%;
       border-radius: 25px;
-
       @media only screen and (max-width:768px) {
         border-radius: 20px;
       }
@@ -837,86 +837,109 @@
   }
 
   .user-estimates {
+    gap:2rem;
 
-  }
-}
-
- /* ------------/PROFESSION-INFO --------------*/
- /*  .estimates {
-    &__first {
-     &:hover {
-      background-color: #F8EBC2;
-     }
-     background-color: #fff;
+    .left-header-estimates {
+      position: absolute;
+      left:-27.5rem;
+      font-size: 2.4rem;
+      h2 {
+        font-weight: bold!important;
+      }
+      
+      @media only screen and (max-width:1024px) {
+        display: none;
+      }
+    }
+    .left-header-estimates-craftsman {
+      position: absolute;
+      top:5rem;
+      left:-28rem;
+    }
+    .user-estimates__icon-block {
+      &:hover {
+        background-color: #F8EBC2;
+      }
+      max-width: 100%;
+      transition: .3s;
+      background-color:#FFFFFF;
       border-radius: 25px;
       -webkit-box-shadow: 10px 7px 44px -27px rgba(0,0,0,0.83);
       -moz-box-shadow: 10px 7px 44px -27px rgba(0,0,0,0.83);
-      box-shadow: 10px 7px 44px -27px rgba(0,0,0,0.83);
-      transition: all .3s;
-
-      .estimates-icons-shape{
-        padding: 1.8rem 4.5rem 1.7rem 4.5rem;
+      box-shadow: 1px 0px 40px -27px rgba(0,0,0,0.83);
+      .user-estimates__icon-block-estimates {
+        font-size:.9rem;
+        padding:1.3rem;
+        border-radius: 1rem;
+        background-color:white;
+        margin-bottom: 1.7rem;  
       }
-      .stars {
-        font-size: 7rem;
-        border-radius: 100%;
-        background-color: #fff8f8;
-        padding: 20px;
-        color: blue;
+
+      .estimates-span-3 {
+        span:first-of-type {
+          font-style: normal;
+          font-weight: bold;
+          font-size: 1.6rem;
+        }
+        span:nth-of-type(2) {
+          color: #A7A8AA;
+          font-weight: normal;
+          font-size: 1.3rem;
+        }
+        span:nth-of-type(3) {
+          color:blue;
+          font-family: $font-secondary;
+          font-style: normal;
+          font-weight: normal;
+          font-size: .9rem;
+          color: #909194;
+        }
+      }
+      div:first-child{
+        background-color:#FFFFFF;
+        padding: 1.25rem 2rem;
+        margin: 1.8rem 4.5rem 1.2rem 4.5rem;
+        border-radius: 50%;
+        font-size: 3rem;
         --fa-primary-color: #FFDF77;
         --fa-secondary-color: #FFEDB2;
         --fa-secondary-opacity: 1;
       }
-
-      .estimate-bottom {
-        padding: 1.3rem 0.9rem 1.2rem 1.7rem;
-        margin: 1.3rem 0 0.9rem 0;
-        background-color: #fff;
-        border-radius: 10px;
-        align-self: center;
+      div:nth-of-type(2) {
+        padding-bottom: .9rem;
+          svg {
+            font-size: 1.6rem;
+            margin-left: 2.9rem;
+          }
+        span:first-of-type {
+          font-size: 2.4rem;
+          margin-right: 1rem;
+        }
+        span:nth-of-type(2) {
+          font-size: 0.9rem;
+          padding-right: 2.9rem;
+        }
       }
-    }
-
- 
-  }
-
-  .shield {
-    font-size: 7rem;
-    border-radius: 100%;
-    background-color: #96DC7B;
-    padding: 20px;
-    color: blue;
-    --fa-primary-color: #96DC7B;
-    --fa-secondary-color: #FFFFFF;
-    --fa-secondary-opacity: 1;
-  }
-
-  .hands {
-    font-size: 2rem;
-    border-radius: 100%;
-    background-color: #FFAB61;
-    padding: 20px;
-    color: blue;
-    --fa-primary-color: #FFFFFF;
-    --fa-secondary-color: #FFEEDF;
-    --fa-secondary-opacity: .7;
-
-    .fa-praying-hands {
-      font-size: 2.4rem;
-    }
-  }
-
-  .sim-categories {
-    .col-7 {
-      span {
-        border: 1px solid #BDD9FF;
-        box-sizing: border-box;
-        border-radius: 10px;
-        padding: 1.3rem 1.6rem;
+      .clock {
+        background-color: #90B4E5!important;
+        --fa-secondary-color: white!important;
+        --fa-primary-color: #90B4E5!important;
+      }
+      .shield {
+        background-color: #96DC7B!important;
+        --fa-primary-color: #96DC7B!important;
+        --fa-secondary-color: #ffffff!important;
+      }
+      .hands {
+        background-color: #FFAB61!important;
+        --fa-primary-color: #ffffff!important;
+        --fa-secondary-color: #FFEEDF!important;
+      }
+      .clock-text{
+        font-size: 1.3rem!important;
+        text-align: center;
+        margin-right: 0!important;
       }
     }
   }
-  .fixed-bottom {
-    margin-bottom: -4.5rem;
-  } */
- 
+}
