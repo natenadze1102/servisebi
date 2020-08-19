@@ -125,7 +125,7 @@
   /* ---------------HEADER----------------------*/
   header {
     border-bottom: 1px solid #EDF3FB;
-    /* padding: 1.4rem 0 1.5rem 0; */
+   
 
     .header-phone {
         display: none;
@@ -863,15 +863,13 @@
         background-color: #F8EBC2;
       }
       @media only screen and (max-width:768px) {
-        
         &:nth-of-type(4) {
-          /* display: none!important; */
+          display: none!important;
         }
       }
       @media only screen and (max-width:575px) {
-        
         &:nth-of-type(3) {
-          /* display: none!important; */
+          display: none!important;
         }
       }
      

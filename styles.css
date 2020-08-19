@@ -112,7 +112,6 @@ body {
 /* ---------------HEADER----------------------*/
 header {
   border-bottom: 1px solid #EDF3FB;
-  /* padding: 1.4rem 0 1.5rem 0; */
 }
 
 header .header-phone {
@@ -919,13 +918,13 @@ header .header__images {
 
 @media only screen and (max-width: 768px) {
   .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(4) {
-    /* display: none!important; */
+    display: none !important;
   }
 }
 
 @media only screen and (max-width: 575px) {
   .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(3) {
-    /* display: none!important; */
+    display: none !important;
   }
 }
 
