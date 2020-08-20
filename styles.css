@@ -114,6 +114,12 @@ header {
   border-bottom: 1px solid #EDF3FB;
 }
 
+@media only screen and (min-width: 768px) {
+  header {
+    padding: 1.5rem 0;
+  }
+}
+
 header .header-phone {
   display: none;
 }
@@ -491,10 +497,6 @@ header .header__images {
   }
 }
 
-.user-profession .diagnostic {
-  position: relative;
-}
-
 .user-profession .diagnostic .share-btn {
   position: absolute;
   right: 13%;
@@ -514,7 +516,11 @@ header .header__images {
 
 @media only screen and (max-width: 1024px) {
   .user-profession .diagnostic span {
-    font-size: 2.2rem;
+    /* font-size: 3.2rem; */
+  }
+  .user-profession .diagnostic .unic-id {
+    right: 0;
+    color: blue;
   }
 }
 
@@ -541,7 +547,7 @@ header .header__images {
 
 .user-profession .unic-id {
   position: absolute;
-  right: 18%;
+  right: 16%;
   top: 0;
   background: #22252B;
   border-radius: 12px;
@@ -558,7 +564,7 @@ header .header__images {
   display: flex;
   position: absolute;
   top: 0;
-  right: 1rem;
+  right: 12% !important;
 }
 
 .user-profession .diagnostic__schedule {
@@ -654,7 +660,7 @@ header .header__images {
 
 .user-profession .left-header {
   position: absolute;
-  left: -27.5rem;
+  left: 3rem;
   font-size: 2.4rem;
   font-weight: bold;
 }
@@ -704,7 +710,7 @@ header .header__images {
   .user-profession .left-header-types {
     display: block;
     left: 0;
-    bottom: 49%;
+    top: 7rem;
   }
   .user-profession .left-header-types h2 {
     font-size: 1.3rem;
@@ -712,7 +718,7 @@ header .header__images {
 }
 
 .user-profession .service-types {
-  position: relative;
+  /* position: relative; */
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -869,6 +875,36 @@ header .header__images {
   }
 }
 
+.user-profession .estimates-craftsman-mob {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 3.2rem;
+  margin-top: -3.2rem;
+}
+
+.user-profession .estimates-craftsman-mob div:first-of-type {
+  margin-right: 1.5rem;
+}
+
+.user-profession .estimates-craftsman-mob div:first-of-type span {
+  font-size: 1.8rem;
+  margin-right: 1rem;
+}
+
+.user-profession .estimates-craftsman-mob div:nth-of-type(2) > span {
+  color: #31BD00;
+  font-family: NotoSansGeorgian;
+  font-weight: normal;
+  font-size: 1.1rem;
+}
+
+@media only screen and (min-width: 1024px) {
+  .user-profession .estimates-craftsman-mob {
+    display: none !important;
+  }
+}
+
 .user-profession .user-estimates {
   gap: 2rem;
 }
@@ -917,13 +953,13 @@ header .header__images {
 }
 
 @media only screen and (max-width: 768px) {
-  .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(4) {
+  .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(6) {
     display: none !important;
   }
 }
 
 @media only screen and (max-width: 575px) {
-  .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(3) {
+  .user-profession .user-estimates .user-estimates__icon-block:nth-of-type(5) {
     display: none !important;
   }
 }
@@ -1019,5 +1055,62 @@ header .header__images {
   font-size: 1.3rem !important;
   text-align: center;
   margin-right: 0 !important;
+}
+
+.user-profession .sim-cat {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: .8rem;
+  padding-top: 8.7rem;
+  max-width: 90%;
+}
+
+.user-profession .sim-cat .left-header-sim {
+  position: absolute;
+  left: -27.5rem;
+  font-size: 2.4rem;
+  font-weight: bold;
+}
+
+.user-profession .sim-cat .left-header-sim :last-of-type {
+  display: none !important;
+}
+
+@media only screen and (max-width: 1024px) {
+  .user-profession .sim-cat .left-header-sim {
+    left: 0;
+    top: 3rem;
+  }
+  .user-profession .sim-cat .left-header-sim :first-of-type {
+    display: none;
+  }
+  .user-profession .sim-cat .left-header-sim :last-of-type {
+    display: inline !important;
+    font-weight: bold;
+  }
+  .user-profession .sim-cat .left-header-sim h2 {
+    font-size: 1.3rem;
+  }
+}
+
+.user-profession .sim-cat div:not(:first-of-type) {
+  border: 1px solid #BDD9FF;
+  border-radius: 1rem;
+  padding: 1.3rem 1.6rem;
+}
+
+.user-profession .sim-cat div:not(:first-of-type) span {
+  font-size: 1.1rem !important;
+}
+
+.user-profession .sim-cat div:nth-child(1) {
+  /*  order: 7; */
+}
+
+.user-profession .sim-cat div:nth-child(2) {
+  /* order: 6; */
 }
 /*# sourceMappingURL=styles.css.map */

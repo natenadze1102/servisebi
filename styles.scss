@@ -125,8 +125,11 @@
   /* ---------------HEADER----------------------*/
   header {
     border-bottom: 1px solid #EDF3FB;
-   
 
+    @media only screen and (min-width:768px) {
+      padding: 1.5rem 0;
+    }
+  
     .header-phone {
         display: none;
     }
@@ -471,19 +474,15 @@
  /* ------------PROFESSION-INFO ---------------*/
 
 .user-profession {
-.row {
-  justify-content: center;
-  .col {
-    
+  .row {
+    justify-content: center;
   }
-}
- 
+  
   @media screen and (min-width:1024px) {
     .col {
       justify-content: center;
     }
   }
-   
   .craftsman {
     display: flex;
     gap: 0.9rem;
@@ -503,8 +502,6 @@
     }
   }
   .diagnostic {
-    position: relative;
-   
     .share-btn {
       position: absolute;
       right:13%;
@@ -523,7 +520,12 @@
 
     @media only screen and (max-width:1024px) {
       span {
-        font-size: 2.2rem;
+        /* font-size: 3.2rem; */
+      }
+
+      .unic-id {
+        right:0;
+        color:blue;
       }
     }
     @media only screen and (max-width:768px) {
@@ -551,7 +553,7 @@
   }
   .unic-id {
     position: absolute;
-    right: 18%;
+    right: 16%;
     top:0;
     background: #22252B;
     border-radius: 12px;
@@ -565,7 +567,7 @@
       display: flex;
       position: absolute;
       top:0;
-      right:1rem;
+      right:12%!important;
   }
   .diagnostic__schedule {
     gap:4.5rem;
@@ -662,7 +664,7 @@
   }
   .left-header{
     position: absolute;
-    left:-27.5rem;
+    left:3rem;
     font-size: 2.4rem;
     font-weight: bold;
     @media only screen and (max-width:1024px) {
@@ -702,14 +704,14 @@
     @media only screen and (max-width:768px) {
       display: block;
       left:0;
-      bottom:49%;
+      top:7rem;
       h2 {
         font-size: 1.3rem;
       }
     }
   }
   .service-types {
-    position: relative;
+    /* position: relative; */
     display: flex;
     flex-wrap: wrap!important;
     
@@ -763,7 +765,6 @@
       }
     }
   }
-
   .service-types-more {
     span {
       display: inline!important;
@@ -787,7 +788,6 @@
       }
     }
   }
-
   .left-header-address {
     position: relative;
     left:-27.5rem;
@@ -805,7 +805,6 @@
       top:-7rem;
     }
   }
-
   .craftsman__address {
     margin-top: 7rem;
     font-family: $font-secondary;
@@ -824,7 +823,6 @@
       }
     }
   }
-
   .craftsman__address-map {
     margin-bottom: 6.2rem;
     iframe {
@@ -835,10 +833,33 @@
       }
     }
   }
+  .estimates-craftsman-mob {
+    align-items: center;
+    margin-bottom: 3.2rem;
+    margin-top: -3.2rem;
+    div:first-of-type {
+      margin-right: 1.5rem;
+      span {
+        font-size: 1.8rem;
+        margin-right: 1rem;
+      }
+    }
+    div:nth-of-type(2) {
+      >span {
+        color: #31BD00;
+        font-family: $font-secondary;
+        font-weight: normal;
+        font-size:1.1rem;
+      }
+    }
 
+    @media only screen and (min-width:1024px) {
+      display: none!important;
+    }
+  }
   .user-estimates {
     gap:2rem;
-    @media only screen and (max-width:576px) {
+      @media only screen and (max-width:576px) {
       justify-content: center;
     }
     .left-header-estimates {
@@ -853,26 +874,29 @@
         display: none;
       }
     }
+
     .left-header-estimates-craftsman {
       position: absolute;
       top:5rem;
       left:-28rem;
     }
+
     .user-estimates__icon-block {
       &:hover {
         background-color: #F8EBC2;
       }
       @media only screen and (max-width:768px) {
-        &:nth-of-type(4) {
+        &:nth-of-type(6) {
           display: none!important;
         }
       }
       @media only screen and (max-width:575px) {
-        &:nth-of-type(3) {
+        &:nth-of-type(5) {
           display: none!important;
+          
         }
       }
-     
+
       transition: .3s;
       background-color:#FFFFFF;
       border-radius: 25px;
@@ -955,6 +979,57 @@
         text-align: center;
         margin-right: 0!important;
       }
+    }
+  }
+  .sim-cat {
+    display: flex;
+    flex-wrap: wrap;
+    gap:.8rem;
+    padding-top: 8.7rem;
+    max-width: 90%;
+
+    .left-header-sim {
+      position: absolute;
+      left:-27.5rem;
+      font-size: 2.4rem;
+      font-weight: bold;
+      :last-of-type {
+        display: none!important;
+      }
+      @media only screen and (max-width:1024px) {
+        :first-of-type {
+          display: none;
+        }
+        :last-of-type {
+          display: inline!important;
+          font-weight: bold;
+        }
+        left:0;
+        top:3rem;
+        h2 {
+          font-size: 1.3rem;
+        }
+      }
+    }
+ 
+    div:not(:first-of-type) {
+      border: 1px solid #BDD9FF;
+      border-radius: 1rem;
+      padding: 1.3rem 1.6rem;
+      span {
+        font-size: 1.1rem!important;
+      }
+      
+      @media screen and (min-width:768px) {
+     
+        
+      }
+    }
+    div:nth-child(1) {
+     /*  order: 7; */
+    }
+    div:nth-child(2) {
+      /* order: 6; */
     }
   }
 }
