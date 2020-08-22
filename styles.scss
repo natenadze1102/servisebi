@@ -502,41 +502,32 @@
     }
   }
   .diagnostic {
-    .share-btn {
-      position: absolute;
-      right:13%;
-    }
     p {
       font-size: 3.2rem;
- 
+      
       span:nth-of-type(3){
         display: block;
       }
       span:nth-of-type(4){
        font-size: 1.7rem;
-       
       }
     }
 
-    @media only screen and (max-width:1024px) {
-      span {
-        /* font-size: 3.2rem; */
-      }
-
+    @media only screen and (max-width:768px) {
       .unic-id {
-        right:0;
-        color:blue;
+        bottom:5.1rem;
+        left:31rem;
+      }
+    }
+    @media only screen and (max-width:550px) {
+      .unic-id {
+        left: 12rem;
       }
     }
     @media only screen and (max-width:768px) {
      /*  margin-right: 11rem; */
       span {
-        font-size:  1.8rem;
-      }
-      span:first-of-type {
-        
-        display: block;
-        
+        font-size:  2.4rem;
       }
       span:nth-of-type(3){
         display: inline!important;
@@ -544,36 +535,73 @@
       span:nth-of-type(4){
         font-size: 0.8rem!important;
       }
-      .share-btn {
-        img {
-          width: 1rem;
-        }
+    }
+    @media only screen and (max-width:550px) {
+      span:nth-of-type(1) {
+        display: block;
       }
     }
+    @media only screen and (max-width:450px) {
+      span {
+        font-size:1.8rem!important;
+      }
+    }
+    @media only screen and (max-width:468px) {
+      /*  margin-right: 11rem; */
+       span {
+         font-size:  2.2rem;
+       }
+       span:nth-child(1) {
+        display: block;
+      }
+     }
   }
   .unic-id {
-    position: absolute;
-    right: 16%;
-    top:0;
+    position: relative;
+    left: 58rem;
+    bottom:10rem;
     background: #22252B;
     border-radius: 12px;
     padding: 1rem;
     color:#fff;
+
+    @media screen and (max-width:468px) {
+      left: 10rem!important;
+      bottom:4.5rem;
+      padding:1rem;
+    }
   }
   .share-btn {
-      padding: 1.1rem 1.2rem;
+      display: inline-block;
+      padding: 1.2rem 1.4rem;
+      background-color: #ffff;
       border: 1px solid #ffedeee0;
       border-radius: 15px;
-      display: flex;
-      position: absolute;
-      top:0;
-      right:12%!important;
+      position: relative;
+      right: -60rem;
+      bottom: 9.8rem;
+      
+      @media screen and (max-width:768px) {
+        left:31rem;
+        bottom:4.5rem;
+        padding: .8rem 1rem;
+        border-radius: 8px;
+      }
+      @media screen and (max-width:550px) {
+        left:0;
+        
+      }
+      @media screen and (max-width:468px) {
+        left: -.2rem;
+        bottom:4.5rem;
+      }
   }
   .diagnostic__schedule {
     gap:4.5rem;
     margin-bottom: 4rem;
     @media only screen and (max-width:768px) {
       border-bottom:1px solid #D5D5D5!important;
+      gap:1rem;
     }
     
 
@@ -596,6 +624,10 @@
      
       &:hover {
         background-color: #EDF3FB;
+      }
+
+      div {
+        flex-shrink: 0;
       }
 
       .clock {
@@ -629,16 +661,27 @@
     }
     
     }
-
     @media only screen and (max-width:768px) {
-      border:none;
-      gap:1rem;
   
       .diagnostic__schedule__block {
-        padding: 1.8rem 0rem 1.4rem 1.6rem;
+        
+        &:nth-child(4) {
+          .dollar  {
+            display: none;
+          }
+        }
+      }
+    }
+    @media only screen and (max-width:576px) {
+      border:none;
+      /* gap:1rem; */
+  
+      .diagnostic__schedule__block {
+        /* padding: 1.8rem 0rem 1.4rem 1.6rem; */
         line-height: 1;
         border:none;
         padding-bottom: 1rem;
+
         div:last-of-type {
           border-right: 1px solid #D5D5D5;
           border-radius: 2px;
@@ -1079,6 +1122,13 @@ footer {
     margin-top: 6.5rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
    
+    @media only screen and (max-width:350px) {
+      * {
+        font-size:1rem!important;
+      }
+    }
+    
+
     div:first-child {
       img:first-of-type {
         padding-right:1rem;
@@ -1140,6 +1190,10 @@ footer {
       border-radius: 10px;
       padding: 1.3rem 2.3rem 1.2rem 2.3rem;
       margin-right: .8rem;
+
+      @media only screen and (max-width:600px) {
+        padding: 1.1rem 1.6rem 1.2rem 1.6rem;
+      }
   
       i {
         padding-right: 4rem;
@@ -1155,7 +1209,6 @@ footer {
         padding-left: .4rem;
       }
       span:last-of-type {
-        padding-right:.8rem;
         font-weight: bold;
       }
       @media only screen and (max-width:600px) {
