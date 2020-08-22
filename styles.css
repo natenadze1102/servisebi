@@ -281,7 +281,7 @@ header .header__images {
 }
 
 .craftsman-clients .container-fluid .row .col .clients-group .clients-group-subtext span:last-of-type {
-  font-size: .9rem;
+  font-size: 0.9rem !important;
   font-family: NotoSansGeorgian;
 }
 
@@ -770,7 +770,7 @@ header .header__images {
 
 .user-profession .user-profession__desc-text p {
   font-family: NotoSansGeorgian;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
   margin-right: 10rem;
   font-weight: normal;
 }
@@ -843,7 +843,7 @@ header .header__images {
 
 .user-profession .service-types .service-types__group div span {
   margin-left: 1rem !important;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 
 @media only screen and (max-width: 768px) {
@@ -1054,7 +1054,7 @@ header .header__images {
 }
 
 .user-profession .user-estimates .user-estimates__icon-block .user-estimates__icon-block-estimates {
-  font-size: .9rem;
+  font-size: 0.9rem !important;
   padding: 1.3rem;
   border-radius: 1rem;
   background-color: white;
@@ -1073,13 +1073,13 @@ header .header__images {
 .user-profession .user-estimates .user-estimates__icon-block .estimates-span-3 span:first-of-type {
   font-style: normal;
   font-weight: bold;
-  font-size: 1.6rem;
+  font-size: 1.6rem !important;
 }
 
 .user-profession .user-estimates .user-estimates__icon-block .estimates-span-3 span:nth-of-type(2) {
   color: #A7A8AA;
   font-weight: normal;
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
   margin-right: .4rem;
 }
 
@@ -1088,7 +1088,7 @@ header .header__images {
   font-family: NotoSansGeorgian;
   font-style: normal;
   font-weight: normal;
-  font-size: .9rem;
+  font-size: 0.9rem !important;
   color: #909194;
 }
 
@@ -1118,7 +1118,7 @@ header .header__images {
 }
 
 .user-profession .user-estimates .user-estimates__icon-block div:nth-of-type(2) span:nth-of-type(2) {
-  font-size: 0.9rem;
+  font-size: 0.9rem !important;
   padding-right: 2.9rem;
 }
 
@@ -1327,7 +1327,7 @@ footer .sticky-chat > div:nth-child(3) {
 
 footer .sticky-chat > div:nth-child(3) > span {
   font-family: NotoSansGeorgian;
-  font-size: 1.1rem;
+  font-size: 1.1rem !important;
   font-weight: normal;
   padding-right: 3.9rem;
 }
@@ -1396,7 +1396,7 @@ footer .sticky-chat > div:nth-child(5) {
 
 footer .sticky-chat > div:nth-child(5) span:first-of-type {
   font-family: NotoSansGeorgian;
-  font-size: 1.3rem;
+  font-size: 1.3rem !important;
   font-weight: normal;
   position: relative;
   padding: 1.2rem 1.2rem 1.4rem 1.3rem;
@@ -1431,7 +1431,7 @@ footer .sticky-chat > div:nth-child(5) span:first-of-type::after {
 footer .sticky-chat > div:nth-child(5) span:last-of-type {
   position: absolute;
   background-color: #EF5C2E;
-  font-size: .8rem;
+  font-size: 0.8rem !important;
   color: #FFFFFF;
   padding: 2px 7px 2px 7px;
   top: -1.5rem;
