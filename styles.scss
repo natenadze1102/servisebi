@@ -76,6 +76,12 @@
   .mb-70 {
     margin-bottom: 7rem;
   }
+/* 
+  @media only screen and (min-width: 768px) {
+    .container, .container-md, .container-sm {
+      max-width: none!important;
+  }
+  } */
 
  
 
@@ -128,6 +134,10 @@
 
     @media only screen and (min-width:768px) {
       padding: 1.5rem 0;
+    }
+
+    @media only screen and (width:768px) {
+      padding:0!important;
     }
   
     .header-phone {
@@ -515,17 +525,9 @@
 
     @media only screen and (max-width:768px) {
       .unic-id {
-        bottom:5.1rem;
+        bottom:4.8rem;
         left:31rem;
       }
-    }
-    @media only screen and (max-width:550px) {
-      .unic-id {
-        left: 12rem;
-      }
-    }
-    @media only screen and (max-width:768px) {
-     /*  margin-right: 11rem; */
       span {
         font-size:  2.4rem;
       }
@@ -537,15 +539,17 @@
       }
     }
     @media only screen and (max-width:550px) {
+      .unic-id {
+        left: 12rem;
+      }
+    }
+
+    @media only screen and (max-width:550px) {
       span:nth-of-type(1) {
         display: block;
       }
     }
-    @media only screen and (max-width:450px) {
-      span {
-        font-size:1.8rem!important;
-      }
-    }
+
     @media only screen and (max-width:468px) {
       /*  margin-right: 11rem; */
        span {
@@ -555,6 +559,13 @@
         display: block;
       }
      }
+
+    @media only screen and (max-width:450px) {
+      span {
+        font-size:1.8rem!important;
+      }
+    }
+   
   }
   .unic-id {
     position: relative;
@@ -569,6 +580,12 @@
       left: 10rem!important;
       bottom:4.5rem;
       padding:1rem;
+    }
+    @media screen and (width:768px) {
+      left:0!important;
+      top:-.5rem;
+      padding: .8rem 1rem;
+      border-radius: 8px;
     }
   }
   .share-btn {
@@ -587,13 +604,19 @@
         padding: .8rem 1rem;
         border-radius: 8px;
       }
+      @media screen and (width:768px) {
+        left:0;
+        top:0;
+        padding: .4rem 1rem;
+        border-radius: 8px;
+      }
       @media screen and (max-width:550px) {
         left:0;
         
       }
       @media screen and (max-width:468px) {
         left: -.2rem;
-        bottom:4.5rem;
+        bottom:4.2rem;
       }
   }
   .diagnostic__schedule {
@@ -602,6 +625,10 @@
     @media only screen and (max-width:768px) {
       border-bottom:1px solid #D5D5D5!important;
       gap:1rem;
+    }
+    @media only screen and (width:768px) {
+      border-bottom:none!important;
+      gap:4rem!important;
     }
     
 
@@ -892,7 +919,7 @@
         color: #31BD00;
         font-family: $font-secondary;
         font-weight: normal;
-        font-size:1.1rem;
+        font-size:1.1rem!important;
       }
     }
 
@@ -1118,7 +1145,7 @@ footer {
   .sticky-chat {
     background-color:rgb(255, 255, 255);
     border-radius: 20px;
-    padding:2.1rem 0 2.3rem 0;
+    padding:1.8rem 0 1.8rem 0;
     margin-top: 6.5rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
    
@@ -1178,7 +1205,7 @@ footer {
         position: absolute;
         flex-direction: row;
         left:5.5rem;
-        top:4.3rem;
+        top:4rem;
         >span{
           padding-right:.5rem!important;
         }
