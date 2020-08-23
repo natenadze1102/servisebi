@@ -1,9 +1,14 @@
 @charset "UTF-8";
 /* Import font (FiraGo,NotoSansGeorgian) */
-@import url("https://free.bboxtype.com/embedfonts/?family=FiraGO:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+/*   @import url('https://free.bboxtype.com/embedfonts/?family=FiraGO:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i'); */
 @font-face {
   font-family: "NotoSansGeorgian";
   src: url("/fonts/NotoSansGeorgian-Medium") format("ttf"), url("/fonts/NotoSansGeorgian-Regular") format("ttf");
+}
+
+@font-face {
+  font-family: "FiraGO";
+  src: url("/fonts/FiraGO-Bold") format("woff2"), url("/fonts/FiraGO-ExtraBold.woff2") format("woff2"), url("/fonts/FiraGO-Regular.woff2") format("woff2"), url("/fonts/FiraGO-ExtraBold.woff2") format("woff2"), url("/fonts/FiraGO-BookItalic.woff2") format("woff");
 }
 
 /* Asteriscs */
@@ -72,12 +77,6 @@ body {
   margin-bottom: 7rem;
 }
 
-/* 
-  @media only screen and (min-width: 768px) {
-    .container, .container-md, .container-sm {
-      max-width: none!important;
-  }
-  } */
 .container-fluid {
   max-width: 1440px !important;
 }
@@ -142,7 +141,7 @@ header .header__text {
 }
 
 header .header__text--1 {
-  font-family: FiraGO;
+  font-family: NotoSansGeorgian;
   font-style: Book Italic;
   font-size: 1rem;
 }
@@ -1078,6 +1077,7 @@ header .header__images {
 
 .user-profession .user-estimates .user-estimates__icon-block .estimates-span-3 span:nth-of-type(2) {
   color: #A7A8AA;
+  font-family: Lucida Grande !important;
   font-weight: normal;
   font-size: 1.3rem !important;
   margin-right: .4rem;
