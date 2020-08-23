@@ -4,17 +4,17 @@
 
   @font-face {
     font-family: "NotoSansGeorgian";
-    src: url("/fonts/NotoSansGeorgian-Medium") format("ttf"),
-      url("/fonts/NotoSansGeorgian-Regular") format("ttf");
+    src: url("../fonts/NotoSansGeorgian-Medium") format("ttf"),
+      url("../fonts/NotoSansGeorgian-Regular") format("ttf");
   }
 
   @font-face {
     font-family: "FiraGO";
-    src: url("/fonts/FiraGO-Bold") format("woff2"),
-      url("/fonts/FiraGO-ExtraBold.woff2") format("woff2"),
-      url("/fonts/FiraGO-Regular.woff2") format("woff2"),
-      url("/fonts/FiraGO-ExtraBold.woff2") format("woff2"),
-      url("/fonts/FiraGO-BookItalic.woff2") format("woff");
+    src: url("../fonts/FiraGO-Bold") format("woff2"),
+      url("../fonts/FiraGO-ExtraBold.woff2") format("woff2"),
+      url("../fonts/FiraGO-Regular.woff2") format("woff2"),
+      url("../fonts/FiraGO-ExtraBold.woff2") format("woff2"),
+      url("../fonts/FiraGO-BookItalic.woff2") format("woff");
   }
   /* Asteriscs */
   * {
