@@ -1188,6 +1188,12 @@ header .header__images {
   max-width: 90%;
 }
 
+@media only screen and (max-width: 425px) {
+  .user-profession .sim-cat {
+    gap: 2rem !important;
+  }
+}
+
 .user-profession .sim-cat .left-header-sim {
   position: absolute;
   left: -27.5rem;

@@ -1079,6 +1079,9 @@
     padding-top: 8.7rem;
     max-width: 90%;
 
+    @media only screen and (max-width:425px) {
+      gap:2rem!important;
+    }
     .left-header-sim {
       position: absolute;
       left:-27.5rem;
