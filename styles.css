@@ -1224,7 +1224,7 @@ header .header__images {
 
 @media only screen and (max-width: 576px) {
   .user-profession .sim-cat {
-    gap: .4rem;
+    gap: .3rem;
     max-width: 100%;
   }
 }
