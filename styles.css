@@ -253,6 +253,12 @@ header .header__images {
   position: relative;
 }
 
+@media only screen and (max-width: 360px) {
+  .craftsman-clients .container-fluid .row .col .clients-group > img:last-of-type {
+    display: none;
+  }
+}
+
 .craftsman-clients .container-fluid .row .col .clients-group .with-circle {
   position: relative;
 }
@@ -543,6 +549,15 @@ header .header__images {
   }
 }
 
+@media only screen and (max-width: 360px) {
+  .user-profession .diagnostic p span {
+    font-size: 1.6rem !important;
+  }
+  .user-profession .diagnostic .unic-id {
+    left: 7.5rem !important;
+  }
+}
+
 @media only screen and (max-width: 550px) {
   .user-profession .diagnostic span:nth-of-type(1) {
     display: block;
@@ -632,6 +647,13 @@ header .header__images {
 @media screen and (max-width: 468px) {
   .user-profession .share-btn {
     left: -.2rem;
+    bottom: 4.2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .user-profession .share-btn {
+    left: -3rem;
     bottom: 4.2rem;
   }
 }
@@ -1002,6 +1024,15 @@ header .header__images {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 360px) {
+  .user-profession .user-estimates {
+    gap: 1rem;
+  }
+  .user-profession .user-estimates .clock, .user-profession .user-estimates .stars {
+    margin: 1.2rem 3.5rem 1.2rem 3.5rem !important;
   }
 }
 
